@@ -1,0 +1,484 @@
+@charset "utf-8";
+
+
+/* Reset CSS */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    list-style-type: none;
+}
+
+/* Utilities */
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #191919;
+    border-radius: 20px;
+    border: 2px solid #101010;
+}
+
+:root {
+    --green-default: #1DB954;
+    --black-default: #121212;
+}
+
+.site {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar */
+
+.sidebar-countainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #101010;
+    padding: 20px;
+    width: 18vw;
+}
+
+.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-countainer h1 {
+    color: var(--green-default);
+}
+
+.sidebar-countainer h1 a {
+    color: var(--green-default);
+}
+
+.sidebar-countainer h2 {
+    color: #ffff;
+    font-size: 0.8rem;
+}
+
+.sidebar-countainer a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.sidebar-countainer a:hover {
+    transition: 300ms;
+    color: var(--green-default);
+}
+
+.sidebar-itens {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.sidebar-itens ul {
+    padding: 2rem 1.5rem;
+}
+
+.sidebar-itens li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.tec {
+    text-align: center;
+    margin-top: 22rem;
+}
+
+.fa-html5, .fa-css3-alt, .fa-js-square, .fa-bootstrap, .fa-font-awesome {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0.6rem;
+}
+
+/* Principal Page */
+
+.principal-page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: var(--black-default);
+    width: 100vw;
+}
+
+.principal-page h2 {
+    color: white;
+    padding: 2rem 3rem;
+    width: 30rem;
+}
+
+/* Principal Page > Recomendations */
+
+#greeting {
+    margin-left: -7px;
+    color: #ffff;
+    background-color: var(--black-default);
+    width: 20rem;
+}
+
+.recomendations {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0rem 2rem 2rem 2rem;
+    background-color: var(--black-default);
+}
+
+#second-line {
+    margin-top: 1rem;
+    background-color: var(--black-default);
+}
+
+.recomendations h3 {
+    padding-left: 10px;
+    color: #ffff;
+}
+
+.recommended-songs {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black-default);
+}
+
+.recommended-songs p {
+    width: 14.375rem;
+}
+
+.recommended-songs a {
+    text-decoration: none;
+}
+
+.recommended-songs p:hover {
+    transition: 300ms;
+    color: var(--green-default);
+}
+
+.recomendation-songs-image {
+    background-color: white;
+    height: 14.375rem;
+    border-radius: 0.625em;
+    margin: 0.625rem;
+    background-color: var(--black-default);
+}
+
+#recomendation-song-01 {
+    background-image: url(../images/pexels-agnese-lunecka-7845374.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#recomendation-song-02 {
+    background-image: url(../images/pexels-anastasia-belousova-7909034.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#recomendation-song-03 {
+    background-image: url(../images/pexels-hoài-nam-7837730.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#recomendation-song-04 {
+    background-image: url(../images/pexels-juanico-8620637.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#recomendation-song-05 {
+    background-image: url(../images/pexels-kokokara-10932047.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#recomendation-song-06 {
+    background-image: url(../images/pexels-madelin-berry-11191316.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#recomendation-song-07 {
+    background-image: url(../images/pexels-masha-raymers-9406085.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#recomendation-song-08 {
+    background-image: url(../images/pexels-michael-dupuis-5602575.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.music-name {
+    color: white;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black-default);
+}
+
+.footer-sidebar p {
+    color: #ffff;
+    font-size: 0.7em;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.footer-sidebar {
+    background-color: #101010;
+    width: 15.4vw;
+}
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    background-color: var(--black-default);
+    width: 82vw;
+}
+
+.developer p {
+    color: #ffff;
+}
+
+.developer a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.developer a:hover {
+    color: #1DB954;
+}
+
+#external-link {
+    font-size: 0.75rem;
+}
+
+/* Favorites */
+
+#principal-page-favorites {
+    height: 100vh;
+}
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0rem 3rem 0rem;
+}
+
+.favorites p {
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+#whiteheart {
+    width: 10%;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-favorites {
+    margin-top: -3rem;
+}
+
+/* Página de música */
+
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+
+.image-music {
+    display: flex;
+    align-content: center;
+    width: 27rem;
+    height: 27rem;
+    margin: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+#music {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: -30px;
+}
+
+#artist {
+    color: var(--green-default);
+    font-size: 1.2rem;
+    padding: 2px;
+}
+
+#button-music {
+    padding: 30px;
+}
+
+#music-bit-me {
+    background-image: url(../images/pexels-kokokara-10932047.jpg);
+}
+
+#music-dont-wanna-let {
+    background-image: url(../images/pexels-juanico-8620637.jpg);
+}
+
+#music-hows-it-supposed {
+    background-image: url(../images/pexels-masha-raymers-9406085.jpg);
+}
+
+#music-inspired {
+    background-image: url(../images/pexels-hoài-nam-7837730.jpg);
+}
+
+#music-its-only-worth {
+    background-image: url(../images/pexels-anastasia-belousova-7909034.jpg);
+}
+
+#music-no-turning-back {
+    background-image: url(../images/pexels-michael-dupuis-5602575.jpg);
+}
+
+#music-thats-what-it-takes {
+    background-image: url(../images/pexels-agnese-lunecka-7845374.jpg);
+}
+
+#music-till-i-let-go {
+    background-image: url(../images/pexels-madelin-berry-11191316.jpg);
+}
+
+/* Mobile Version */
+
+@media (max-width: 950px) {
+
+* {
+    
+}
+
+.site {
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+
+.sidebar-countainer {
+    width: 100vw;
+    height: 405px;
+}
+
+.tec {
+    margin-top: -1rem;
+}
+
+.sidebar-countainer h1 {
+    font-size: 2.5rem;
+}
+
+/* Principal Page */
+
+.principal-page {
+    width: 100vw;
+    height: 100%;
+}
+
+/* Principal Page > Recomendations */
+
+#second-line {
+    margin-top: 0;
+}
+
+.recommended-songs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommended-songs p {
+    width: 14.375rem;
+    margin: auto;
+    padding: 0.3rem 0rem 1rem 0rem;
+}
+
+.recommended-songs a {
+    text-decoration: none;
+}
+
+.recommended-songs p:hover {
+    transition: 300ms;
+    color: var(--green-default);
+}
+
+.recomendation-songs-image {
+    background-color: white;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 0.625em;
+    margin: 0.625rem;
+}
+
+/* Music */
+
+.image-music {
+    width: 21rem;
+    height: 21rem;
+}
+
+/* Footer */
+
+.footer {
+    flex-direction: column;
+}
+
+.footer-sidebar {
+    background-color: var(--black-default);
+}
+
+.footer-sidebar {
+    width: 100vw;
+}
+
+.developer {
+    width: 100vw;
+}
+
+main, .site, .footer {
+    overflow-x: hidden;
+}
+
+}
