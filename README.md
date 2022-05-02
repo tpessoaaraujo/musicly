@@ -1,7 +1,7 @@
 <h1>Musicly</h1>
 <h2>Esse é o Musicly, um projeto pessoal de um site de streaming de músicas, baseado no spotify.</h2>
 
-<p>Você pode acessar o projeto no ar <a href="https://tpessoaaraujo.github.io/musicly/">clicando aqui</a>.
+<p>Você pode acessar o projeto no ar <a href="https://tpessoaaraujo.github.io/musicly/" target="_blank">clicando aqui</a>.
 
 <h3>Tecnologias utilizadas no projeto:</h3>
   <div style="display: inline_block">
