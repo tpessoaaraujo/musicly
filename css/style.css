@@ -160,6 +160,7 @@ body {
 }
 
 .recommended-songs p {
+    margin: 0 auto;
     width: 14.375rem;
 }
 
@@ -174,7 +175,7 @@ body {
 
 .recomendation-songs-image {
     background-color: white;
-    height: 14.375rem;
+    height: 17rem;
     border-radius: 0.625em;
     margin: 0.625rem;
     background-color: var(--black-default);
